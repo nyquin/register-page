@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Projeto - Página de Registro</title>
+
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+	</head>
+
+	<body>
+
+		<div class="container">
+			<div class="register">
+				<div class="register-header">
+					<h1>Registre-se</h1>
+					<p>Se você não possui uma conta em nosso site, crie uma!</p>
+				</div>
+				<form class="register-item">
+					<div class="register-content">
+							<fieldset id="name">
+								<label for="name">Nome:</label>
+								<input type="text" id="nome" placeholder="Seu nome">
+
+								<label for="last_name">Sobrenome:</label>
+								<input type="text" id="last_name" placeholder="Seu sobrenome">
+						</fieldset>
+					</div>
+						
+					<div class="register-content">	
+							<fieldset id="email">
+								<label for="email">E-mail:</label>
+								<input type="text" id="email" placeholder="@email.com">
+							</fieldset>
+					</div>
+
+					<div class="register-content">
+							<fieldset id="password">
+								<label for="password">Senha:</label>
+								<input type="password" id="password" placeholder="Sua senha">
+
+								<label for="password">Confirme sua senha:</label>
+								<input type="password" id="password" placeholder="Confirme sua senha">
+							</fieldset>
+					</div>
+
+					<div id="checkbox">
+						<input type="checkbox" id="checkboxButton" checked>
+						<label for="checkbox" id="checkboxLabel">Aceito os termos de Uso e Privacidade!</label>	
+					</div>
+
+					<div class="button">
+						<button type="button">Registrar</button>
+					</div>
+
+					<div id="register-footer">
+						<a href="#">
+							<img width="30" src="imagens/fb.png" alt="">
+							Registre com o Facebook
+						</a> 
+
+						<a href="#">
+							<img width="30" src="imagens/google.png" alt="">
+							Registre com o Google
+						</a>
+					</div>
+						</form>
+			</div>
+		</div>
+	</body>
+</html>

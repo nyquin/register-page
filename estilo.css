@@ -1,0 +1,198 @@
+/***********CONFIG GERAIS **********/
+* {
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;	
+}
+
+body {
+	background: linear-gradient(135deg, #17EB64, #02D595) no-repeat;
+	height: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/**************** CABEÇALHO ***********/
+
+.container {
+	border-radius: 10px;
+	padding: 40px;
+	margin: 20px auto;
+	background: #fff;
+	width: 100%;
+	max-width: 728px;
+	display: flex;
+	flex-direction: column;	
+}
+
+.register-header{
+	margin-bottom: 20px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.register-header h1 {
+	font-size: 40px;
+	display: block;
+}
+
+.register-header p {
+	opacity: 0.7;
+}
+
+/************ CORPO DO REGISTRO *************/
+
+fieldset {
+	border-style: none;
+	width: 100%;	
+}
+
+.register-content {
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	justify-items: right;
+}
+
+fieldset#name label:not(#checkboxLabel) {
+    display: inline-block;
+    background: #fff;
+    margin-bottom: 10px;
+    position: absolute;
+    padding: 0px 11px;
+    transform: translate(30px, -10px);
+    font-size: 16px;
+    font-weight: 550;
+}
+
+fieldset#email {
+
+}
+
+fieldset#email label:not(#checkboxLabel) {
+    display: inline-block;
+    background: #fff;
+    margin-bottom: 10px;
+    position: absolute;
+    padding: 0px 11px;
+    transform: translate(30px, -10px);
+    font-size: 16px;
+    font-weight: 550;
+}   
+
+input[type='text'], input[type='password']{
+	margin-bottom: 20px;
+	width: 100%;
+	height: 50px;
+	padding: 0 2rem;
+	border: 1px solid black;
+	border-radius: 100px;
+	font-size: 18px;
+	transition: background;
+	outline: none;
+}
+
+fieldset#password label:not(#checkboxLabel) {
+    display: inline-block;
+    background: #fff;
+    margin-bottom: 10px;
+    position: absolute;
+    padding: 0px 11px;
+    transform: translate(30px, -10px);
+    font-size: 16px;
+    font-weight: 550;
+}
+
+#checkbox {
+	width: 100%;
+	margin-left: 12px;
+    display: flex;
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+label#checkboxLabel {
+	margin-left: 8px;
+}
+
+button {
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;    
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+    gap: 7px;
+    cursor: pointer;
+    display: inline-block;	
+    align-items: center;
+    background: linear-gradient(35deg, #17EB64, #02D595);
+}
+
+/********* rodapé **********/
+
+#register-footer {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 70px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    gap: 15px;
+    border: 1px solid black;
+    border-radius: 100px;
+    padding: .6rem;
+    margin: 0px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+a:hover {
+    background: #eee;
+}
+
+/*RESPONSIVE */
+
+@media (max-width: 1024px){
+
+	body{
+		margin:10px;
+	}
+
+    .register {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .register-content {
+        width: 100%;
+    }
+
+    .register-footer {
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media (max-width 768px){
+    body {
+        width: 100%;
+        padding: 10px;
+    }
+    .container {
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
