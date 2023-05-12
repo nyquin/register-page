@@ -6,4 +6,4 @@ Foram utilizado apenas HTML e CSS, e será adicionado funcionalidades em JavaScr
 
 Página de Cadastro para linkar com a Página de Login, anteriormente postada!
 
-link: 
+link: https://registerpage-nycolas.netlify.app
